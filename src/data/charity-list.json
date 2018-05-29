@@ -1,0 +1,13 @@
+{
+	"name": "Charity List",
+
+	"list": [
+		{
+			"id": 1,
+
+			"name": "Greenpeace",
+
+			"image": "greenpeace-logo.svg"
+		}
+	]
+}

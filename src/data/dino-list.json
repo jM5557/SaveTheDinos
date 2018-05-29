@@ -1,0 +1,103 @@
+{
+	"name": "Dinosaur List",
+
+	"list": [
+		{
+			"id": 1,
+			"name": "Tyrannosaurus rex",
+			"image": "rexy_one",
+			"age": 30
+		},
+
+		{
+			"id": 2,
+			"name": "Velociraptor (Blue)",
+			"image": "blue_one",
+			"age": 6
+		},
+
+		{
+			"id": 3,
+			"name": "Triceratops",
+			"image": "trike_one",
+			"age": "Unknown"
+		},
+
+		{
+			"id": 4,
+			"name": "Brachiosaurus",
+			"image": "brachy_one",
+			"age": 11
+		},
+
+		{
+			"id": 5,
+			"name": "Stygimoloch",
+			"image": "stiggy_one",
+			"age": 7
+		},
+
+		{
+			"id": 6,
+			"name": "Carnotaurus",
+			"image": "carno_one",
+			"age": 9
+		},
+
+		{
+			"id": 7,
+			"name": "Baryonyx",
+			"image": "baryonyx_one",
+			"age": 8
+		},
+
+		{
+			"id": 8,
+			"name": "Sinoceratops",
+			"image": "sin_one",
+			"age": 4
+		},
+
+		{
+			"id": 9,
+			"name": "Gallimimus",
+			"image": "ostrich_one",
+			"age": 4
+		},
+
+		{
+			"id": 10,
+			"name": "Pteranodon",
+			"image": "ptery_one",
+			"age": 6
+		},
+
+		{
+			"id": 11,
+			"name": "Mosasaurus",
+			"image": "mosa_one",
+			"age": 11
+		},
+
+		{
+			"id": 12,
+			"name": "Stegosaurus",
+			"image": "stego_one",
+			"age": 11
+		},
+
+		{
+			"id": 13,
+			"name": "Apatosaurus",
+			"image": "bronto_one",
+			"age": 8
+		},
+
+		{
+			"id": 14,
+			"name": "Ankylosaurus",
+			"image": "ankylo_ren_one",
+			"age": 17
+		}
+	]
+}
