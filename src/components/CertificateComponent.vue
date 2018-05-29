@@ -7,7 +7,9 @@
 			<img alt = "Certificate of Adoption" :src = "renderedImgSrc" />
 		</div>
 
-		<button v-on:click = "resetAll">Adopt Another Dinosaur</button>
+		<div class = "button_ctr">
+			<button v-on:click = "resetAll">Adopt Another Dinosaur</button>
+		</div>
 	</div>
 </template>
 
@@ -146,11 +148,16 @@
 				
 				img.src = 'images/' + this.data.dinoItem.image + '.png';
 
-				console.log(this.data.charityItem.image);
+				if (this.data.charityItem != null) {
 
-				charityLogo.crossOrigin = 'Anonymous';
+					console.log(this.data.charityItem.image);
 
-				charityLogo.src = 'images/' + this.data.charityItem.image;
+					charityLogo.crossOrigin = 'Anonymous';
+
+					charityLogo.src = 'images/' + this.data.charityItem.image;
+
+				}
+
 			},
 
 			resetAll: function () {

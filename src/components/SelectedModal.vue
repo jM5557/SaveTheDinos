@@ -122,6 +122,7 @@
 </script>
 
 <style lang = "scss">
+
 	#selected-modal-display-wrapper {
 		max-width: 1440px;
 		margin: auto;
@@ -149,9 +150,7 @@
 		}
 
 		#select-btn {
-			bottom: 15px;
-			left: 30px;
-			position: absolute;
+			margin-top: 25px;		
 		}
 
 		@media all and (max-width: 900px) {
@@ -191,4 +190,5 @@
 			}
 		}
 	}
+	
 </style>
