@@ -39,21 +39,17 @@
 
 				var img = new Image();
 
-				img.crossOrigin = 'Anonymous';
-				img.src = 'images/' + this.data.dinoItem.image + '.png';
-
-				var imgSrc = '';
-
 				img.onload = () => {
 
 					this.ctx.drawImage(img, 0, 0);
 
-					imgSrc = this.canv.toDataURL("image/png");
+					this.renderedImgSrc = this.canv.toDataURL("image/png");
 
 				};
 
-
-				this.renderedImgSrc = imgSrc;
+				img.crossOrigin = 'Anonymous';
+				
+				img.src = 'images/' + this.data.dinoItem.image + '.png';
 			}
 		},
 
