@@ -135,6 +135,7 @@
 						this.ctx.drawImage(charityLogo, 330, 400, 240, 240 * charityLogo.height / charityLogo.width);
 
 						this.renderedImgSrc = this.canv.toDataURL("image/png");
+						
 					}
 				}
 
