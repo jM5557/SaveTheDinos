@@ -22,16 +22,16 @@
 			</div>
 
 			<div id = "charity-list-container" v-if = "current_step == 3">
-				<CharityListComp ></CharityListComp>
+				<CharityListComp v-on:set-item="setCharityItem"></CharityListComp>
 			</div>
 
 			<div v-if = "current_step == 4">
 
 				<FormComp 
 					:dinoItem = "selectedItem" 
-					:charityId = "charityItem"
+					:charityItem = "charityItem"
 				></FormComp>
-				
+
 			</div>
 
 			<button v-if = "current_step > 2" v-on:click = "moveToPrevStep()">Back</button>
@@ -59,7 +59,7 @@
 		data () {
 			return {
 
-				current_step: 1,
+				current_step: 1, // DEBUG
 
 				displayCharityList: false,
 
@@ -105,6 +105,11 @@
 				// returns to first numbered state
 				this.current_step = 1;
 				this.displayCharityList = false;
+				this.charityItem = null;
+			},
+
+			setCharityItem: function (item) {
+				this.charityItem = item;
 			}
 
 		},
@@ -139,8 +144,7 @@
 			margin: -100px 0px auto auto;
 			max-width: 500px;
 			width: 45%;
-			background: url('./../images/dna_bg.jpg') no-repeat center center;
-			background-size: cover;
+			background-color: #6aa150;
 			padding: 20px 20px;
 		}
 

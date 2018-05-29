@@ -7,7 +7,7 @@
 			Save the Dinos.
 		</h1>
 		
-		<DinosaurListComp></DinosaurListComp>
+		<DinosaurListComp v-if = "certData == null"></DinosaurListComp>
 
 		<div id="cert-container" v-if = "certData != null">
 			<CertificateComp :data = "certData"></CertificateComp>

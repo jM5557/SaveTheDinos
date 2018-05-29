@@ -8,6 +8,54 @@
 			"name": "Greenpeace",
 
 			"image": "greenpeace-logo.svg"
+		},
+
+		{
+			"id": 2,
+
+			"name": "The Dian Fossey Gorilla Fund",
+
+			"image": "dian-fossey-logo.jpg"
+		},
+
+		{
+			"id": 3,
+
+			"name": "Ecohealth Alliance",
+
+			"image": "ecohealth-alliance.jpg"
+		},
+
+		{
+			"id": 4,
+
+			"name": "African Wildlife Foundation",
+
+			"image": "african-w-foundation.svg"
+		},
+
+		{
+			"id": 5,
+
+			"name": "American Bird Conservancy",
+
+			"image": "american-bird-conserv.jpg"
+		},
+
+		{
+			"id": 6,
+
+			"name": "WildAid",
+
+			"image": "wildaid.jpg"
+		},
+
+		{
+			"id": 7,
+
+			"name": "Wildlife Conservation Society",
+
+			"image": "wildlife-conservation-society.png"
 		}
 	]
 }

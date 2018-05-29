@@ -27,11 +27,13 @@
 
 		data () {
 			return {
-				name: '',
+				name: 'Bub',
 
 				msg: 'Together, we can save them.',
 
-				display_error_message: false
+				display_error_message: false,
+
+				charityItem: this.charityItem
 			}
 		},
 
@@ -65,7 +67,9 @@
 						
 							msg: this.msg,
 
-							dinoItem: this.dinoItem
+							dinoItem: this.dinoItem,
+
+							charityItem: this.charityItem
 
 						});
 
