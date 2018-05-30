@@ -67,8 +67,6 @@
 		        	  line = words[n] + ' ';
 		        	  y += lineHeight;
 		        	  lineCount++;
-		        	  
-		        	  console.log(lineCount);
 		        	}
 
 		        	else {
@@ -122,14 +120,12 @@
 						this.ctx.font = "20px Roboto Condensed";
 
 						this.wrapText(this.ctx, this.data.msg, 25, mainBoxVertOffset + 108, this.canv.width - 50, 25);
-
-						console.log(this.adjustedHeightFactor);
 					}
 
 					if (this.data.charityItem == null) {
 
 						this.renderedImgSrc = this.canv.toDataURL("image/png");
-						
+
 					}
 
 				};
@@ -153,8 +149,6 @@
 				img.src = 'images/' + this.data.dinoItem.image + '.png';
 
 				if (this.data.charityItem != null) {
-
-					console.log(this.data.charityItem.image);
 
 					//charityLogo.crossOrigin = 'Anonymous';
 
@@ -201,12 +195,18 @@
 	}
 </script>
 
-<style>
+<style lang = "scss">
 	#main-canvas {
 		
 	}
 
 	#certificate-outer-wrapper {
 		text-align: center;
+	}
+
+	#rendered-img-container {
+		img {
+			max-width: 95%;
+		}
 	}
 </style>

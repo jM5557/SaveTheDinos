@@ -118,6 +118,7 @@
 
 	body {
 		font-family: 'Roboto', sans-serif;
+		background-color: #fefefe;
 	}
 
 	h1, h2, h3,

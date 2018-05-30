@@ -59,7 +59,7 @@
 		data () {
 			return {
 
-				current_step: 1, // DEBUG
+				current_step: 1,
 
 				displayCharityList: false,
 
@@ -190,5 +190,5 @@
 			}
 		}
 	}
-	
+
 </style>
