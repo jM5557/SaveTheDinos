@@ -126,6 +126,12 @@
 						console.log(this.adjustedHeightFactor);
 					}
 
+					if (this.data.charityItem == null) {
+
+						this.renderedImgSrc = this.canv.toDataURL("image/png");
+						
+					}
+
 				};
 
 				if (this.data.charityItem != null) {
@@ -142,13 +148,7 @@
 					}
 				}
 
-				else {
-
-					this.renderedImgSrc = this.canv.toDataURL("image/png");
-
-				}
-
-				img.crossOrigin = 'Anonymous';
+				//img.crossOrigin = 'Anonymous';
 				
 				img.src = 'images/' + this.data.dinoItem.image + '.png';
 
@@ -156,7 +156,7 @@
 
 					console.log(this.data.charityItem.image);
 
-					charityLogo.crossOrigin = 'Anonymous';
+					//charityLogo.crossOrigin = 'Anonymous';
 
 					charityLogo.src = 'images/' + this.data.charityItem.image;
 
