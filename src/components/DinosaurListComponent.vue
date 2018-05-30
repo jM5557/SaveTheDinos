@@ -112,6 +112,17 @@
 			padding: 5px 15px;
 		}
 
+		.button_ctr {
+
+			button,
+			input[type="submit"], 
+			.save_btn {
+				display: block;
+				max-width: 85%;
+				margin: 15px auto;
+			}
+			
+		}
 	}
 
 </style>

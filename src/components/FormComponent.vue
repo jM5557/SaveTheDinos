@@ -101,6 +101,13 @@
 		font-size: 1.10em;
 		display: block;
 		width: 100%;
+		font-family: 'Roboto', sans-serif;
+
+		@media all and (max-width: 720px) {
+			width: 90%;
+			max-width: 95%;
+			margin: 15px auto;
+		}
 	}
 
 	textarea {
@@ -127,5 +134,7 @@
 		max-width: 500px;
 		margin: auto;
 	}
+
+
 
 </style>

@@ -152,7 +152,8 @@
 	}
 
 	button,
-	input[type="submit"] {
+	input[type="submit"],
+	.save_btn {
 		color: #fefefe;
 		font-size: 1.35em;
 		border: none;
@@ -163,6 +164,11 @@
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		cursor: pointer;
+	}
+
+	.save_btn {
+		color: #fefefe;
+		text-decoration: none;
 	}
 
 	.header-main {

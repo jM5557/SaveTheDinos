@@ -1,13 +1,14 @@
 <template>
 	<div id = "certificate-outer-wrapper">
 		
-		<canvas id = "main-canvas" width = "640" height = "900"></canvas>
+		<canvas id = "main-canvas" width = "640" height = "900" v-if="canvLoading == true"></canvas>
 
 		<div id="rendered-img-container" v-if = "renderedImgSrc != null">
 			<img alt = "Certificate of Adoption" :src = "renderedImgSrc" />
 		</div>
 
 		<div class = "button_ctr">
+			<a class = "save_btn" v-on:click="downloadImg" href="#">Save Image</a>
 			<button v-on:click = "resetAll">Adopt Another Dinosaur</button>
 		</div>
 	</div>
@@ -23,6 +24,8 @@
 
 		data () {
 			return {
+
+				canvLoading: true,
 
 				canv: null,
 
@@ -135,7 +138,7 @@
 						this.ctx.drawImage(charityLogo, 330, 400, 240, 240 * charityLogo.height / charityLogo.width);
 
 						this.renderedImgSrc = this.canv.toDataURL("image/png");
-						
+
 					}
 				}
 
@@ -163,6 +166,11 @@
 
 			resetAll: function () {
 				certDataBus.$emit('generate-cert', null);
+			},
+
+			downloadImg: function (e) {
+				e.target.href = this.renderedImgSrc;
+				e.target.download = "DPGCertificate.png";
 			}
 		},
 
@@ -187,6 +195,8 @@
 			this.ctx.fillText(this.data.dinoItem.name, 25, 120);
 
 			this.populateCanvasWithData();
+
+			this.canvLoading = false;
 		}
 	}
 </script>
