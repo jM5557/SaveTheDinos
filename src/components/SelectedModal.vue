@@ -17,15 +17,26 @@
 
 				<button v-on:click = "moveToNextStep(2)">Yes</button>
 
-				<button v-on:click = "moveToNextStep(3)">No</button>
+				<button v-on:click = "moveToNextStep(4)">No</button>
 
 			</div>
 
 			<div id = "charity-list-container" v-if = "current_step == 3">
-				<CharityListComp v-on:set-item="setCharityItem"></CharityListComp>
+				<h2>Pick A Charity.</h2>
+				<CharityListComp v-on:set-item="setCharityItem" :selectedCharityItem = "charityItem"></CharityListComp>
 			</div>
 
-			<div v-if = "current_step == 4">
+			<div id = "charity-item-container" v-if = "current_step == 4">
+				<div>
+					<h2>{{ charityItem.name }}</h2>
+
+					<img class = "selected_charity_logo" :src="'images/' + charityItem.image" alt="Selected Charity Logo">
+
+					<div class = "button_ctr"><a class = "link_btn" :href="charityItem['donate-link']">Visit Link.</a></div>
+				</div>
+			</div>
+
+			<div v-if = "current_step == 5">
 
 				<FormComp 
 					:dinoItem = "selectedItem" 
@@ -36,7 +47,10 @@
 
 			<button v-if = "current_step > 2" v-on:click = "moveToPrevStep()">Back</button>
 
-			<button v-if = "current_step == 3" v-on:click="moveToNextStep(3)">
+			<button v-if = "(current_step == 3 && charityItem != null) 
+				|| current_step == 4" 
+
+				v-on:click="moveToNextStep(current_step)">
 				Next
 			</button>
 
@@ -76,7 +90,7 @@
 				// if the charityList is set to NOT display
 				// skip step 3 and go to 2
 				if (!this.displayCharityList 
-						&& this.current_step == 4) {
+						&& this.current_step == 5) {
 					prev_step = 2;
 				}
 
@@ -189,6 +203,14 @@
 				text-align: left;
 			}
 		}
+	}
+
+	.selected_charity_logo {
+		max-width: 720px;
+		width: 85%;
+		display: block;
+		margin: 15px auto;
+		background-color: #fff;
 	}
 
 </style>

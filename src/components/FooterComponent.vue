@@ -1,6 +1,9 @@
 <template>
 	<footer>
-		<a href="http://www.dinosaurprotectiongroup.com/">
+
+		<a href="https://www.youtube.com/watch?v=_TXCVO_O6vE" class = "vid_tagline">Together, we can save them.</a>
+		
+		<a href="http://www.dinosaurprotectiongroup.com/" class = "bubble_tagline">
 			<img alt = "save the dinosaurs badge" src = "images/badge.png" />
 		</a>
 
@@ -25,17 +28,26 @@
 		padding: 35px 25px;
 		margin-top: 25px;
 
-		img {
-			max-width: 200px;
+		.bubble_tagline {
+			max-width: 250px;
+			position: relative;
 			display: block;
-			margin: 20px auto;
-			opacity: 0.70;
-			border-radius: 50%;
+			margin: auto;
 
-			&:hover {
-				opacity: 0.90;
+			img {
+				max-width: 250px;
+				display: block;
+				margin: auto auto;
+				opacity: 0.70;
+				border-radius: 50%;
+
+				&:hover {
+					opacity: 0.90;
+				}
 			}
 		}
+
+		
 
 		#disclaimer {
 			font-size: 10pt;
@@ -45,6 +57,18 @@
 			color: #888;
 			text-align: center;
 
+		}
+
+		.vid_tagline {
+			color: #AAA;
+			padding: 15px 20px;
+			text-align: center;
+			display: block;
+			width: 80%;
+			max-width: 500px;
+			font-family: 'DecoturaICG', sans-serif;
+			font-size: 3.45rem;
+			margin: auto;
 		}
 
 		@media all and (max-width: 900px) {

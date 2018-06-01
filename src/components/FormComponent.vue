@@ -100,10 +100,10 @@
 		border: none;
 		font-size: 1.10em;
 		display: block;
-		width: 100%;
+		width: 95%;
 		font-family: 'Roboto', sans-serif;
 
-		@media all and (max-width: 720px) {
+		@media all and (max-width: 900px) {
 			width: 90%;
 			max-width: 95%;
 			margin: 15px auto;

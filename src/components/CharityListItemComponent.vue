@@ -29,9 +29,23 @@
 		}
 
 		img {
-			max-width: 175px;
+			width: auto;
 			background-color: #fefefe;
 			padding: 15px;
+			height: 100px;
+		}
+
+		@media all and (max-width: 720px) {
+			display: block;
+
+			img {
+
+				height: auto;
+				width: 75%;
+				display: block;
+				margin: auto;
+
+			}
 		}
 	}
 </style>

@@ -7,7 +7,9 @@
 
 			"name": "Greenpeace",
 
-			"image": "greenpeace-logo.svg"
+			"image": "greenpeace-logo.svg",
+
+			"donate-link": "https://engage.us.greenpeace.org/onlineactions/BoeXh-fe4UCwP0Ey1CCK0w2"
 		},
 
 		{
@@ -15,7 +17,9 @@
 
 			"name": "The Dian Fossey Gorilla Fund",
 
-			"image": "dian-fossey-logo.jpg"
+			"image": "dian-fossey-logo.jpg",
+
+			"donate-link": "https://donate.gorillafund.org/give/137778/#!/donation/checkout"
 		},
 
 		{
@@ -23,7 +27,9 @@
 
 			"name": "Ecohealth Alliance",
 
-			"image": "ecohealth-alliance.jpg"
+			"image": "ecohealth-alliance.jpg",
+
+			"donate-link": "https://www.ecohealthalliance.org/donate"
 		},
 
 		{
@@ -31,7 +37,9 @@
 
 			"name": "African Wildlife Foundation",
 
-			"image": "african-w-foundation.svg"
+			"image": "african-w-foundation.svg",
+
+			"donate-link": "https://www.awf.org/donate"
 		},
 
 		{
@@ -39,7 +47,9 @@
 
 			"name": "American Bird Conservancy",
 
-			"image": "american-bird-conserv.jpg"
+			"image": "american-bird-conserv.jpg",
+
+			"donate-link": "https://abcbirds.org/donate"
 		},
 
 		{
@@ -47,7 +57,9 @@
 
 			"name": "WildAid",
 
-			"image": "wildaid.jpg"
+			"image": "wildaid.jpg",
+
+			"donate-link": "https://donate.wildaid.org/give/126299/#!/donation/checkout"
 		},
 
 		{
@@ -55,7 +67,9 @@
 
 			"name": "Wildlife Conservation Society",
 
-			"image": "wildlife-conservation-society.png"
+			"image": "wildlife-conservation-society.png",
+
+			"donate-link": "https://www.wcs.org/support"
 		}
 	]
 }

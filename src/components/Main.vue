@@ -128,6 +128,10 @@
 		font-weight: bolder;
 	}
 
+	a {
+		text-decoration: none;
+	}
+
 	h1 {
 		font-size: 2.5em;
 	}
@@ -154,7 +158,8 @@
 
 	button,
 	input[type="submit"],
-	.save_btn {
+	.save_btn,
+	.link_btn {
 		color: #fefefe;
 		font-size: 1.35em;
 		border: none;

@@ -99,14 +99,14 @@
 			font-family: 'DecoturaICG', 'Roboto', sans-serif;
 			font-weight: bold;
 			color: #AAA;
-			font-size: 2.5em;
+			font-size: 2.5rem;
 			letter-spacing: 2px;
 			margin: 10px auto;
 		}
 
 		.age {
 			color: #AAA;
-			font-size: 1.35em;
+			font-size: 1.35rem;
 		}
 
 		&:hover {

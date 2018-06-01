@@ -17,11 +17,13 @@
 	export default {
 		name: 'charity-list-component',
 
+		props: [ 'selectedCharityItem' ],
+
 		data () {
 			return {
 				charityList: CharityList.list,
 
-				selectedCharity: null
+				selectedCharity: this.selectedCharityItem
 			}
 		},
 
@@ -48,6 +50,10 @@
 			margin: 5px 7.5px;
 			vertical-align: middle;
 			cursor: pointer;
+		}
+
+		li:hover {
+			opacity: 0.85;
 		}
 
 		li.selected {
